@@ -1,4 +1,7 @@
 <template>
+    <nuxt-link to="about"> Go to About </nuxt-link>
+    <nuxt-link to="apitest"> api </nuxt-link>
+    
     <h1>测试修改内容后    这是首页</h1>
     <el-button @click="ElMessage('hello')">button</el-button>
     <ElButton :icon="ElIconEditPen" type="success" @click="ElMessage('成功啦')">button</ElButton>
