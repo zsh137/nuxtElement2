@@ -1,8 +1,10 @@
 <template>
-    <h1>这是首页</h1>
+    <h1>测试修改内容后    这是首页</h1>
     <el-button @click="ElMessage('hello')">button</el-button>
     <ElButton :icon="ElIconEditPen" type="success" @click="ElMessage('成功啦')">button</ElButton>
     <LazyElButton type="warning" @click="open2">lazy button</LazyElButton>
+
+    <h3>hello</h3>
 </template>
 <script lang="ts" setup>
 // import { h } from 'vue'
