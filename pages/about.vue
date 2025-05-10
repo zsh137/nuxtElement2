@@ -1,4 +1,5 @@
 <template>  
+    <nev></nev>
     <h3>这是关于页面
 
     </h3>

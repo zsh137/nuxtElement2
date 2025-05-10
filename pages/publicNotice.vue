@@ -1,7 +1,8 @@
 <template>
   <nev></nev>
   <div>
-    api测试页面
+
+    <h1>公告</h1>
   </div>
 </template>
 
