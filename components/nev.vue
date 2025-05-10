@@ -13,8 +13,9 @@
   >
     <el-menu-item index="1"> <nuxt-link to="/"> 主页 </nuxt-link></el-menu-item>
     <el-menu-item index="2"> <nuxt-link to="publicNotice"> 公告公示 </nuxt-link></el-menu-item>
-    <el-menu-item index="3"> <nuxt-link to="apitest"> 新闻 </nuxt-link></el-menu-item> 
-    <el-menu-item index="4"> <nuxt-link to="about"> 关于</nuxt-link></el-menu-item>
+    <el-menu-item index="3"> <nuxt-link to="apitest"> 随机狗狗图 </nuxt-link></el-menu-item> 
+    <el-menu-item index="4"> <nuxt-link to="imgList"> 图片墙 </nuxt-link></el-menu-item> 
+    <el-menu-item index="5"> <nuxt-link to="about"> 关于</nuxt-link></el-menu-item>
   </el-menu>
 </template>
 
