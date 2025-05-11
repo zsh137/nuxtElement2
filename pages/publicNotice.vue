@@ -33,8 +33,7 @@ import { Edit } from '@element-plus/icons-vue'; // 导入所需图标
       transition: all 0.3s ease;
       opacity: 1;
       &:hover {
-        // transform: scale(1.1);
-        // opacity: 0.8;
+        
         animation:rubberBand;
         animation-duration: 1s;
       }

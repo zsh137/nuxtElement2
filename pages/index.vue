@@ -12,7 +12,9 @@
     <el-icon><edit /></el-icon>
   </div>
 </template>
+
 <script lang="ts" setup>
+import 'animate.css';
 import { Edit, WarningFilled } from '@element-plus/icons-vue'; // 导入所需图标
 const open1 = () => {
   ElNotification({
@@ -29,3 +31,11 @@ const open2 = () => {
   })
 }
 </script>
+<style lang="scss" scoped>
+
+  // 添加鼠标移入动画，使用animate.css库
+    h1 {
+        animation:rubberBand;
+        animation-duration: 4s;
+      }
+</style>
