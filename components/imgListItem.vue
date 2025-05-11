@@ -63,7 +63,10 @@ const goToDetail = (URL) => {
     // 和img-title元素重叠
     position: relative;
     z-index: 3;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    
+    cursor: pointer;
+    
 
 
 }
