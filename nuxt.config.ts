@@ -2,9 +2,9 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
-  modules: ["@element-plus/nuxt"],
+  modules: ["@element-plus/nuxt", "@pinia/nuxt"],
   elementPlus: {},
-
+  css: ["animate.css/animate.min.css"],
 
   // 全局参数配置
   runtimeConfig: {

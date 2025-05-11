@@ -66,9 +66,6 @@ const goToDetail = (URL) => {
     margin-bottom: 20px;
     
     cursor: pointer;
-    
-
-
 }
 
 .img-title {
@@ -92,5 +89,10 @@ const goToDetail = (URL) => {
 
 .img-item-box {
     position: relative;
+    // 添加鼠标移入动画，使用animate.css库
+   &:hover {
+        animation:rubberBand;
+        animation-duration: 1s;
+      }
 }
 </style>
