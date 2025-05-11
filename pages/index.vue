@@ -1,7 +1,6 @@
 <template>
     <nev></nev>
     
-    
     <h1>首页</h1>
     <el-button @click="ElMessage('hello')">button</el-button>
     <ElButton :icon="ElIconEditPen" type="success" @click="ElMessage('成功啦')">button</ElButton>
