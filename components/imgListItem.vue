@@ -7,12 +7,16 @@
             <h5 class="img-title">{{ title }}</h5>
             <!-- 点击在新窗口中打开图片 -->
             <!-- <el-image class="img-item" :src="URL" style="width: 200px; height: 200px;" @click="goToDetail(URL)"></el-image> -->
+     
 
+         
             <el-image class="img-item" :src="URL" style="width: 150px; height: 150px;" @click="showPreview = true"></el-image>
 
             <!-- h3 显示在 el-image 组件左上角 -->
+
+            <!-- 预览元素 -->
             <el-image-viewer  v-if="showPreview" :url-list="URLList" show-progress
-        :initial-index="index"  @close="showPreview = false" />
+ :initial-index="index"  @close="showPreview = false" />
         </div>
     </div>
 </template>
