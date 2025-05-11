@@ -11,6 +11,8 @@
     <el-icon><edit /></el-icon>
   </ClientOnly>
   </div>
+  <!-- 引用全局参数相对固定的参数 -->
+  {{ useRuntimeConfig().public.projectCompany }}
 </template>
 
 <script setup lang="ts">
