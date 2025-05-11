@@ -4,20 +4,21 @@
 
 
         <div class="img-item-box">
-            <!-- 点击图片打开图片详情 -->
-
             <h5 class="img-title">{{ title }}</h5>
-            <el-image class="img-item" :src="URL" style="width: 200px; height: 200px;" @click="goToDetail(URL)"></el-image>
-             
+            <!-- 点击在新窗口中打开图片 -->
+            <!-- <el-image class="img-item" :src="URL" style="width: 200px; height: 200px;" @click="goToDetail(URL)"></el-image> -->
+
+            <el-image class="img-item" :src="URL" style="width: 150px; height: 150px;" @click="showPreview = true"></el-image>
 
             <!-- h3 显示在 el-image 组件左上角 -->
-
+            <el-image-viewer  v-if="showPreview" :url-list="URLList" show-progress
+        :initial-index="index"  @close="showPreview = false" />
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
-
+const showPreview = ref(false)
 // 定义 props 接收 url、title、type   组件传参
 const props = defineProps({
     title: {
@@ -27,7 +28,17 @@ const props = defineProps({
     URL: {
         type: String,
         required: true
+    },
+    URLList: {
+        type: Array,
+        required: true
+    },
+    // 用于确定当前图片的索引
+    index: {
+        type: String,
+        required: true
     }
+
 });
 
 // 跳转到详情页
@@ -35,7 +46,7 @@ const router = useRouter();
 const goToDetail = (URL) => {
     // 打开网页
     window.open(`${URL}`); // 打开新页面
-//   router.push(`${URl}`); // 跳转到动态路由
+
 };
 
 </script>
@@ -73,6 +84,6 @@ const goToDetail = (URL) => {
 }
 
 .img-item-box {
-     position: relative;
+    position: relative;
 }
 </style>
